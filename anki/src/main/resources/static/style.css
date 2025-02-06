@@ -1,0 +1,27 @@
+*{
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+
+    background-color: #3a0040;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 5px;
+
+}
+.titulo{
+    text-color: white;
+}

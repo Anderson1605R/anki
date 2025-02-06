@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Gerador de Cards para Anki</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
+
 <h1>Gerador de Cards para Anki</h1>
 
 <!-- Exibe a mensagem de erro, caso haja -->
@@ -13,10 +20,12 @@
 </div>
 
 <form action="/generate-cards" method="post">
-    <label for="text">Insira seu texto no formato "Frente: [pergunta] / Verso: [resposta]":</label><br>
-
-    <textarea name="text" id="text" rows="10" cols="50" th:value="${text}" placeholder="Exemplo: Frente: Flamengo é o melhor do mundo? / Verso: SIM"></textarea><br><br>
-    <button type="submit">Gerar Arquivo CSV</button>
+    <textarea name="text" id="text" rows="10" cols="50" th:value="${text}" placeholder="Exemplo:
+Frente: Flamengo é o maior do mundo?
+Verso: Sim."></textarea><br><br>
+    <div class="button-container">
+        <button type="submit">Gerar Arquivo CSV</button>
+    </div>
 </form>
 </body>
 </html>
