@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Cards para Anki</title>
+</head>
+<body>
+<h1>Gerador de Cards para Anki</h1>
+
+<!-- Exibe a mensagem de erro, caso haja -->
+<div th:if="${error}" style="color: red;">
+    <p th:text="${error}"></p>
+</div>
+
+<form action="/generate-cards" method="post">
+    <label for="text">Insira seu texto no formato "Frente: [pergunta] / Verso: [resposta]":</label><br>
+
+    <textarea name="text" id="text" rows="10" cols="50" th:value="${text}" placeholder="Exemplo: Frente: Flamengo é o melhor do mundo? / Verso: SIM"></textarea><br><br>
+    <button type="submit">Gerar Arquivo CSV</button>
+</form>
+</body>
+</html>
