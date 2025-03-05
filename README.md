@@ -74,20 +74,7 @@ mvn spring-boot:run
 ```
 - Acesse a aplicação pelo navegador em: `http://localhost:8080`
 
-## 📂 Estrutura do Projeto
-```
-ankiapp/
-├── src/
-│   ├── main/
-│   │   ├── java/com/exemplo/ankiapp/
-│   │   │   ├── controller/AnkiController.java
-│   │   │   ├── service/AnkiService.java
-│   │   ├── resources/templates/
-│   │   │   ├── index.html
-│   │   ├── resources/application.properties
-├── pom.xml
-└── README.md
-```
+
 
 ## 📄 Licença
 Este projeto é de uso livre. Sinta-se à vontade para modificar e contribuir! 🚀
