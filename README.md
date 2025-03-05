@@ -52,8 +52,8 @@ Separe cada par de pergunta e resposta com uma linha em branco.
 ## 🏗️ Como Instalar o Projeto
 ### 1️⃣ Clonar o Repositório
 ```sh
-git clone https://github.com/seu-usuario/ankiapp.git
-cd ankiapp
+git clone https://github.com/Anderson1605R/anki.git
+cd anki
 ```
 
 ### 2️⃣ Instalar Dependências
